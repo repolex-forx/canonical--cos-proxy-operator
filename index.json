@@ -1,0 +1,11 @@
+{
+  "org": "canonical",
+  "repo": "cos-proxy-operator",
+  "versions": [
+    {
+      "commit": "621c314d53b456cbcfaa0d7a646a634b8d81451f",
+      "tag": "",
+      "parsed_at": "2026-11-08T15:22:57.754023+00:00"
+    }
+  ]
+}

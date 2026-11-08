@@ -1,1 +1,153 @@
-Initializing
+# Repolex Knowledge Graph of canonical/cos-proxy-operator
+
+RDF knowledge graph data for [canonical/cos-proxy-operator](https://github.com/canonical/cos-proxy-operator), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download canonical/cos-proxy-operator
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── 621c314d53b456cbcfaa0d7a646a634b8d81451f
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── 621c314d53b456cbcfaa0d7a646a634b8d81451f
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 033bbe7573ffd34494e5728930274d52813f11ae.nq.gz
+│   ├── 0cb1275e11e8eddb040301bb54fb46941911f136.nq.gz
+│   ├── 0da62216a99c8b83f6c0b4083cabe1294ab46076.nq.gz
+│   ├── 0f16506e42b0af4ef4a5e6bcd10503ed36cabc91.nq.gz
+│   ├── 140b9a814eca1bf3d03de326a302fa63d81ef2c9.nq.gz
+│   ├── 14cd592e0466bfdd79dcf2003f3bf9310308a98a.nq.gz
+│   ├── 1527248b125dabe30867ea3750b2a727c6797536.nq.gz
+│   ├── 1bb45e9085b56696c3b53307f0da6268b4b3d16a.nq.gz
+│   ├── 1ce40dcc22d4ffc75b02abf2778d71d9f277546f.nq.gz
+│   ├── 219793a0aa948e6766e7ef5ea130682b05755c83.nq.gz
+│   ├── 3472fe735fabd4a07a730f5d2d46b5b3743e1bd5.nq.gz
+│   ├── 3b88bc7efb0310c836d0d6f37b7f22e62ff27332.nq.gz
+│   ├── 3dcd9a56928cdcfb43ad697208a9ed65d15ea397.nq.gz
+│   ├── 3f97676d0036878f65a6893ca7cffed7c9c9184c.nq.gz
+│   ├── 4003535423ef15cf3b5b2c787f0c7fd3942ab76f.nq.gz
+│   ├── 41abea8c575f7cffbea2ef6987f44d860e5303a4.nq.gz
+│   ├── 4733b542d20de5119fc3093c5b8153ef2d9a139b.nq.gz
+│   ├── 4be9a357a79b26e834bdd5876b96f3af7d8db347.nq.gz
+│   ├── 522d586404e9514e7e4606c9b58641a468721f2d.nq.gz
+│   ├── 55969d643048afbcfabdfa8a3314e271294fff2f.nq.gz
+│   ├── 5cb8d2f9900821d7f28f67b69413d36d69df434e.nq.gz
+│   ├── 5d77af11f53e9e16fcb76564b8676ab5f11cded5.nq.gz
+│   ├── 5f3f7e972744a2852d406f4dda261601c60fa78c.nq.gz
+│   ├── 60ceb0ddc9294302a92505e06da263f45bab058d.nq.gz
+│   ├── 652c7d218edf2dc1dcf39f46f745b352c2172801.nq.gz
+│   ├── 68ec65529e42e33374cc1ad7cddfd1fe654156cf.nq.gz
+│   ├── 6ccd559eabeae93e4d23215fa450130fa9b37ace.nq.gz
+│   ├── 7a179cf3507c66c83af399a6f7abbe43ed55cb15.nq.gz
+│   ├── 7a4a3ea2424c09fbe48d455aed1eaa94d9124835.nq.gz
+│   ├── 7a4cff0a1193af82cb6a47e7255781985a5b66af.nq.gz
+│   ├── 7e6aaeabc9ae5ed394c64678a482ca35931fce6a.nq.gz
+│   ├── 7eb957d742cbc730853651a979ee7415aad3f69c.nq.gz
+│   ├── 83fbd00e74376d1e4a578ad258f0e2e4ee99c303.nq.gz
+│   ├── 888c85583f72dc67ed997c9868566452e70cf898.nq.gz
+│   ├── 8a88009c380f308c0be78918ec470fa53a8d3bcb.nq.gz
+│   ├── 8cd1159c1e9b6d6086ee92b11f38883657cb0566.nq.gz
+│   ├── 8cf58fd0db0ff3e80be9640237ce6659e198c628.nq.gz
+│   ├── 8d6aed1111afebf703ed84e5e7327438fc239932.nq.gz
+│   ├── 8f2abd0966097f363234ebddaaa5481b59044fac.nq.gz
+│   ├── 901f14351bdce339c3fcc6c3b3112c94e4fecb2f.nq.gz
+│   ├── 91226abcc3529b3a9e5dca8f828c35e5149abb6c.nq.gz
+│   ├── 977f019e0bdf13636d708ada7a7725c784fae94b.nq.gz
+│   ├── 9b702e08a9655fbf4dca16f7a4fa9a3a6f00ed72.nq.gz
+│   ├── a3e3ff7b876ffae220838b1bee1a7caf2fb7a19a.nq.gz
+│   ├── a652fbe7a3f1d135acbdf5774632881529a339eb.nq.gz
+│   ├── a70253a97a69ab0d68c69583a46072ac6465a572.nq.gz
+│   ├── ad60b546623c02340f4e7eb19bf83031a47b2ea1.nq.gz
+│   ├── af7f1d9da151403dcd4a98f68eca6005f3feec41.nq.gz
+│   ├── aff29f890a081dacb874528f6aa2e9edde9c581c.nq.gz
+│   ├── b0e9e050ab1699c47d92cc8dfa59236da6e5d166.nq.gz
+│   ├── b2348b9fbfdc4eb154566c80f844510446be1d02.nq.gz
+│   ├── b415af0a8109afa614fe12d8c9d83e095c752d50.nq.gz
+│   ├── b845a37f5520e5747ea34a81bfc3669bf7b62266.nq.gz
+│   ├── bc9c3e348593a1edba0e3962118592f298ea5f4b.nq.gz
+│   ├── c0c86401e2b2e67db2350b6b8dab4f419e412e82.nq.gz
+│   ├── c93427954bd740b016256e681f2095908ceaeb3f.nq.gz
+│   ├── cf83b7ad7f413e471966062e37f7434e8c6e7989.nq.gz
+│   ├── d1d01c7a9aa5d7efd8e6ee6ed5b0134984a2922d.nq.gz
+│   ├── d38716d108d937998ff0003c8591533be798c475.nq.gz
+│   ├── de535d0f97c5fd103dfccb173b400b7e71461bd6.nq.gz
+│   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── e892dec322edd77e69c66143362c64f17758a84c.nq.gz
+│   ├── e9ed1750a0342e4654eefb44f235615e6aeb0346.nq.gz
+│   ├── ea9e6f5820ed32edc7a296832fbcb736a6e43104.nq.gz
+│   ├── ec22ba9c4d624597f3c7b50acd6b8342710dd4a1.nq.gz
+│   ├── ef11252455721575286769206aa10e58c8e3759c.nq.gz
+│   ├── f0bcc56798781da38e6b49ecaa0dfe5dc3b9365e.nq.gz
+│   ├── f6c68b9210ac2944f2496878c9ecd42c33b37061.nq.gz
+│   ├── fbc6c50c634bae6ce44822a249e1994478085e84.nq.gz
+│   ├── fd330d098793d0e2d2db7ba36710eebfcf4ed394.nq.gz
+│   ├── fd7ac89e02808e81a4877d08147f5e61f822f247.nq.gz
+│   ├── fefe8314e030df613d79b5461545b599da42f5a6.nq.gz
+│   ├── ff0c062680daeabeadc367f34d7f3c7b8c8bd552.nq.gz
+│   └── ff9b1d3c1109268cb203fd3be2e399e7479b28d2.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── 621c314d53b456cbcfaa0d7a646a634b8d81451f.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 82 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[canonical/cos-proxy-operator](https://github.com/canonical/cos-proxy-operator)
+
+---
+*Parsed on 2026-11-08 by [repolex](https://repolex.ai)*
