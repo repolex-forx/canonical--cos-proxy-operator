@@ -8,7 +8,8 @@
     {
       "@id": "https://repolex.ai/r/canonical/cos-proxy-operator/commit/621c314d53b456cbcfaa0d7a646a634b8d81451f",
       "git:hexsha": "621c314d53b456cbcfaa0d7a646a634b8d81451f",
-      "repolex:parseStatus": "ast_complete"
+      "repolex:parseStatus": "parsed",
+      "repolex:parsedAt": "2026-11-08T15:22:57.753206+00:00"
     },
     {
       "@id": "https://repolex.ai/r/canonical/cos-proxy-operator/commit/476232e2f03d2d3523da054f40db713bd44a0305",
